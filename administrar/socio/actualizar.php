@@ -6,6 +6,7 @@ $paterno=$_POST['paterno'];
 $materno=$_POST['materno'];
 $fechanac=$_POST['fechanac'];
 $ci=$_POST['ci'];
+$telefono=$_POST['telefono'];
 $correo=$_POST['correo'];
 $lugaregreso=$_POST['lugaregreso'];
 $aniotrabajo=$_POST['aniotrabajo'];
@@ -18,6 +19,7 @@ $valores=array("nombres"=>"'$nombres'",
                 "materno"=>"'$materno'",
 				"fechanac"=>"'$fechanac'",
                "ci"=>"'$ci'",
+               "telefono"=>"'$telefono'",
                "correo"=>"'$correo'",
                "lugaregreso"=>"'$lugaregreso'",
                "aniotrabajo"=>"'$aniotrabajo'",

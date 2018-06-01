@@ -41,6 +41,10 @@ include_once($folder."cabecerahtml.php");
                                 <td><input type="file" name="foto" class="form-control" accept=".jpg,.png"></td>
                             </tr>
                             <tr>
+                                <td>Teléfono</td>
+                                <td><input type="text" name="telefono" class="form-control"></td>
+                            </tr>
+                            <tr>
                                 <td>Correo</td>
                                 <td><input type="email" name="correo" class="form-control"></td>
                             </tr>

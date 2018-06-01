@@ -57,6 +57,10 @@ include_once($folder."cabecerahtml.php");
                                 </td>
                             </tr>
                             <tr>
+                                <td>Teléfono</td>
+                                <td><input type="text" name="telefono" class="form-control" value="<?=$col['telefono']?>"></td>
+                            </tr>
+                            <tr>
                                 <td>Correo</td>
                                 <td><input type="email" name="correo" class="form-control" value="<?=$col['correo']?>"></td>
                             </tr>

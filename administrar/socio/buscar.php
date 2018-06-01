@@ -6,7 +6,7 @@ $cur=$socio->mostrarTodoRegistro("nombres LIKE '$nombres%' and paterno LIKE '$pa
 ?>
 <table class="table table-bordered table-striped table-hover">
 <thead>
-<tr><th width="50">Nº</th><th>Nombre</th><th>Paterno</th><th>Materno</th><th>CI</th><th></th></tr>
+<tr><th width="50">Nº</th><th>Nombre</th><th>Paterno</th><th>Materno</th><th>CI</th><th>Teléfono</th><th></th></tr>
 </thead>
 <?php
 foreach($cur as $c){$i++;
@@ -18,6 +18,7 @@ foreach($cur as $c){$i++;
     <td><?php echo $c['paterno']?></td>
     <td><?php echo $c['materno']?></td>
     <td><?php echo $c['ci']?></td>
+    <td><?php echo $c['telefono']?></td>
     <td><a href="../../imagenes/socios/<?php echo $c['foto']?>" target="_blank">
 	<img src="../../imagenes/socios/<?php echo $c['foto']?>" width="30">
 	</a>
