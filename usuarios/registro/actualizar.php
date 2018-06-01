@@ -38,7 +38,7 @@ include_once($folder."cabecerahtml.php");
                     <div class="panel-heading"></div>
                     <div class="panel-body">
                         <h5>Su Usuario se Registro Correctamente</h5>
-                        <a href="listar.php" class="btn btn-success">Listar testimonios</a>
+                        <a href="listar.php" class="btn btn-success">Listar Usuarios</a>
                     </div>
                 </div>
             </div>

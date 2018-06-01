@@ -1,6 +1,6 @@
 <?php
 $folder="../../";
-$nivel=array("2"=>"Administrador","3"=>"Recepcionista","4"=>"Encargado de Eventos");
+$nivel=array("2"=>"Presidente","3"=>"Presidente Filial","4"=>"Secretaria");
 include_once($folder."cabecerahtml.php");
 ?>
 <script language="javascript" type="text/javascript" src="../../js/jquery.form.js"></script>

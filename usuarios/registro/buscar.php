@@ -21,10 +21,11 @@ extract($_POST);
         </tr>
     </thead>
 <?php foreach($usu as $u){$i++;
+//$nivel=array("2"=>"Presidente","3"=>"Presidente Filial","4"=>"Secretaria");
 switch($u['nivel']){
-    case 2:{$nivel="Administrador";}break;    
-    case 3:{$nivel="Recepcionista";}break;    
-    case 4:{$nivel="Encargado de Eventos";}break;    
+    case 2:{$nivel="Presidente";}break;    
+    case 3:{$nivel="Presidente Filial";}break;    
+    case 4:{$nivel="Secretaria";}break;    
 }
   ?>
   <tr>
