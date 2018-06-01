@@ -96,6 +96,7 @@
                     include_once("class/submenu.php");
                     $menu=new menu;
                     $submenu=new submenu;
+
                     foreach($menu->mostrar($_SESSION['Nivel']) as $m){
                     ?>
                     <li class="dropdown">
