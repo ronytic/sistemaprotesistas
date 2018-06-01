@@ -33,7 +33,7 @@ class PPPDF extends PPDF{
         $this->tituloCabecera(20,"Materno");
         $this->tituloCabecera(30,"Nombres");
         
-        $this->tituloCabecera(50,"Correo");
+        $this->tituloCabecera(50,"Teléfono");
         $this->tituloCabecera(35,"Filial");
       
     }
@@ -56,7 +56,7 @@ foreach($soc as $s){
     $pdf->CuadroCuerpo(20,$s['paterno'],0,"",1);
     $pdf->CuadroCuerpo(20,$s['materno'],0,"",1);
     $pdf->CuadroCuerpo(30,$s['nombres'],0,"",1);
-    $pdf->CuadroCuerpo(50,$s['correo'],0,"",1);
+    $pdf->CuadroCuerpo(50,$s['telefono'],0,"",1);
    $pdf->CuadroCuerpo(35,$nombreFilial,0,"",1);
     
     $pdf->ln();
