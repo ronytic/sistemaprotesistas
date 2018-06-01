@@ -5,7 +5,7 @@ include_once("fpdf_protection.php");
 		var $ancho=176;
 		function Header(){
 			global $idioma;
-			$this->SetTitle(utf8_decode("Sistema de Administración de Clinica"),true);
+			$this->SetTitle(utf8_decode("Sistema de Administración"),true);
 			$this->SetAuthor(utf8_decode("Sistema de Administración  Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
 			$this->SetSubject(utf8_decode("Sistema de Administración  Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
 			$this->SetCreator(utf8_decode("Sistema de Administración  Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
