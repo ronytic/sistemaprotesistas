@@ -70,7 +70,7 @@ foreach($soc as $s){
         $p=$pago->mostrarTodoRegistro("codsocio=".$s['codsocio']." and anio='$anio' and mes='$mes'",1,"");
         $p=array_shift($p);
         if($p['estado']){
-            $pdf->CuadroCuerpo(12,number_format($p['monto'],2),0,"R",1);    
+            $pdf->CuadroCuerpo(12,number_format($p['monto'],2),0,"R",1,7);    
         }else{
             $pdf->CuadroCuerpo(12,"",0,"R",1);
         }
@@ -82,7 +82,7 @@ foreach($soc as $s){
 }
 $pdf->CuadroCuerpo(108,"Total",0,"R",1,9,"B");
 for($mes=1;$mes<=12;$mes++){
-    $pdf->CuadroCuerpo(12,number_format(${"t".$mes},2),0,"R",1);
+    $pdf->CuadroCuerpo(12,number_format(${"t".$mes},2),0,"R",1,7);
 }
 $pdf->Output();
 ?>
