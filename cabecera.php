@@ -12,7 +12,7 @@
 <div id="sb-site">
 <div class="boxed">
 
-<header id="header-full-top" class="hidden-xs header-full">
+<header id="header-full-top" class="header-full">
     <div class="container">
         <div class="header-full-title col-lg-7">
            <img src="<?php echo $folder?>imagenes/logos/logodental.png" width="100" class="pull-left">
@@ -20,14 +20,14 @@
             <p class="animated fadeInRight">Arte - <span>Ciencia</span> - Tecnología</p>
         </div>
         <nav class="top-nav">
-            <ul class="top-nav-social hidden-sm">
+            <ul class="top-nav-social hidden-xs">
                 <li><a href="#" class="animated fadeIn animation-delay-8 facebook"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#" class="animated fadeIn animation-delay-7 twitter"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#" class="animated fadeIn animation-delay-9 instagram"><i class="fa fa-instagram"></i></a></li>
 
             </ul>
-
             <div class="dropdown animated fadeInDown animation-delay-11">
+               <a href="" id="abrir" class="btn btn-primary" rel="cerrado"><i class="glyphicon glyphicon-list"></i></a>
                 <?php
                 if($_SESSION['LoginSistema']==""){
                 ?>

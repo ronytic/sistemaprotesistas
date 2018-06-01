@@ -23,4 +23,15 @@ $(document).ready(function(){
         nextText: '>',
         prevText: '<',
     });
+    $("#abrir").click(function(e){
+        e.preventDefault();
+        var v=$(this).attr("rel");
+        if(v=="cerrado"){
+            $(this).attr("rel","abierto");
+            $(".collapse").slideDown(1000);
+        }else{
+            $(this).attr("rel","cerrado");
+           $(".collapse").slideUp(1000); 
+        }
+    });
 });
