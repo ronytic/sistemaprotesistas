@@ -4,6 +4,7 @@ $nombre=$_POST['nombre'];
 $fechafundacion=$_POST['fechafundacion'];
 $presidente=$_POST['presidente'];
 $direccion=$_POST['direccion'];
+$telefono=$_POST['telefono'];
 $codfilial=$_POST['codfilial'];
 
 include_once("../../class/filial.php");
@@ -11,6 +12,7 @@ $filial=new filial;
 $valores=array("nombre"=>"'$nombre'",
                 "fechafundacion"=>"'$fechafundacion'",
                 "presidente"=>"'$presidente'",
+                "telefono"=>"'$telefono'",
 				"direccion"=>"'$direccion'",
             );
 

@@ -25,8 +25,12 @@ include_once($folder."cabecerahtml.php");
                                 <td><input type="text" name="presidente" class="form-control"></td>
                             </tr>
                             <tr>
+                                <td>Teléfono de la Filial</td>
+                                <td><input type="text" name="telefono" class="form-control"></td>
+                            </tr>
+                            <tr>
                                 <td>Dirección de la Filial</td>
-                                <td><textarea name="direccion" class="form-control"></textarea></td>
+                                <td><textarea name="direccion" class="form-control" rows="5"></textarea></td>
                             </tr>
                             <td colspan="2">
                             <input type="submit" value="Guardar" class="btn btn-info">

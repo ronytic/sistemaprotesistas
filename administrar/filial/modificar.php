@@ -31,8 +31,12 @@ include_once($folder."cabecerahtml.php");
                                 <td><input type="text" name="presidente" class="form-control" value="<?php echo $col['presidente']?>"></td>
                             </tr>
                             <tr>
+                                <td>Teléfono de la Filial</td>
+                                <td><input type="text" name="telefono" class="form-control"  value="<?php echo $col['telefono']?>"></td>
+                            </tr>
+                            <tr>
                                 <td>Dirección</td>
-                                <td><textarea name="direccion" class="form-control"><?php echo $col['direccion']?></textarea></td>
+                                <td><textarea name="direccion" class="form-control" rows="5"><?php echo $col['direccion']?></textarea></td>
                             </tr>
                             <td colspan="2">
                             <input type="submit" value="Guardar" class="btn btn-info">
