@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $folder="../";
 ?>
 <!DOCTYPE html>
@@ -9,8 +9,8 @@ $folder="../";
     <meta charset="utf-8" />
     <title>Acceso al Sistema</title>
 
-    <meta name="description" content="Sistema Desarrollado por Ronald Nina Layme Cel: 73230568">
-		<meta name="author" content="Sistema Desarrollado por Ronald Nina Layme Cel: 73230568">
+    <meta name="description" content="Sistema Desarrollado por Ronald ">
+		<meta name="author" content="Sistema Desarrollado por Ronald ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

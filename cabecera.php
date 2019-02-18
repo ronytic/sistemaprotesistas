@@ -15,8 +15,8 @@
 <header id="header-full-top" class="header-full">
     <div class="container">
         <div class="header-full-title col-lg-7">
-           <img src="<?php echo $folder?>imagenes/logos/logodental.png" width="100" class="pull-left">
-            <h1 class="animated fadeInRight"><a href="index.php">Sistema de Laboratoristas  <span>Dentales</span></a></h1>
+           <img src="<?php echo $folder?>imagenes/logos/logodental.png" width="120" class="pull-left">
+            <h1 class="animated fadeInRight"><a href="index.php">FEDERACION&ensp;  BOLIVIANA&ensp; DE&ensp; <span>PROTESISTAS&ensp; DENTALES&ensp; DE&ensp; LABORATORIO</span></a></h1>
             <p class="animated fadeInRight">Arte - <span>Ciencia</span> - Tecnología</p>
         </div>
         <nav class="top-nav">
@@ -83,7 +83,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo $folder?>index.php">Inicio</a></li>
                 <li><a href="<?php echo $folder?>nosotros.php">Nosotros</a></li>
-                <li><a href="<?php echo $folder?>comision-directiva.php">Comisión Directiva</a></li>
+                <li><a href="<?php echo $folder?>comision-directiva.php"> Directiva</a></li>
                 <li><a href="<?php echo $folder?>historia.php">Historia</a></li>
                 <li><a href="<?php echo $folder?>cursos.php">Cursos</a></li>
                 <li><a href="<?php echo $folder?>eventos.php">Eventos</a></li>
@@ -135,14 +135,14 @@
                         <div class="col-md-6 col-sm-7">
                             <div class="carousel-caption">
                                 <div class="carousel-text">
-                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Titulo 1</h1>
-                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Subtitulo</h2>
+                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Inicio Actividades 2019</h1>
+                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Inscribete ya!!</h2>
                                    <ul class="list-unstyled carousel-list">
-                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Proceso 1</li>
-                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>Proceso 2</li>
-                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Proceso 3</li>
+                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Cursos y Talleres</li>
+                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>Instalaciones Propias</li>
+                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Grandes Beneficios para nuestros socios</li>
                                    </ul>
-                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor qui enim dolorem.</p>
+                                   <p class="animated fadeInUpBig animation-delay-17">&nbsp;</p>
                                </div>
                             </div>
                         </div>
@@ -160,14 +160,13 @@
                         <div class="col-md-6 col-sm-8">
                             <div class="carousel-caption">
                                 <div class="carousel-text">
-                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Titulo 1</h1>
-                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Subtitulo</h2>
+                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Productos                                   </h1>
                                    <ul class="list-unstyled carousel-list">
-                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Proceso 1</li>
-                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>Proceso 2</li>
-                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Proceso 3</li>
+                                   <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Actualización Constante de Productos</li>
+                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>Descuentos al ser parte de nuestra Familia</li>
+                                       <li class="animated bounceInLeft animation-delay-15">Grandes Beneficios en Cursos</li>
                                    </ul>
-                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor qui enim dolorem.</p>
+                                   <p class="animated fadeInUpBig animation-delay-17">&nbsp;</p>
                                </div>
                             </div>
                         </div>
@@ -185,7 +184,7 @@
                         <div class="col-md-6 col-sm-8">
                             <div class="carousel-caption">
                                 <div class="carousel-text">
-                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Titulo 1</h1>
+                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Eventos</h1>
                                    <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Subtitulo</h2>
                                    <ul class="list-unstyled carousel-list">
                                        <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Proceso 1</li>

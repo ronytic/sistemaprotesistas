@@ -13,14 +13,14 @@ $folder="";
         <div class="col-md-4">
         <h2 class="section-title">Beneficios </h2>
 		<p>
-        Nos complace darte la bienvenida al PROGRAMA DE BENEFICIOS, pensado exclusivamente para vos y tu grupo familiar, con el que podrán disfrutar de excelentes propuestas, promociones y descuentos tanto en las más importantes casas dentales como también, en los comercios adheridos de variados rubros.
-Con la Credencial Familiar de Beneficios en tu poder y la cuota de socio al día, podrás comprar lo que necesites, solicitar un servicio, disfrutar un lindo día al aire libre o planificar unos días de descanso con costos promocionales.
+        Nos complace darte la bienvenida a nuestra familia, con el que podrán disfrutar de excelentes propuestas, promociones y descuentos tanto en las más importantes casas dentales como también, en los comercios adheridos de variados rubros.
+Con la Credencial  y la cuota de socio al día, podrás comprar lo que necesites, solicitar un servicio, y ser parte de los Eventos que se realizan a nivel nacional, para lo cual
 
-Estamos trabajando para que el programa crezca y esté cada vez más cerca tuyo y de tú familia, por eso, seguimos adhiriendo comercios en toda la provincia de Buenos Aires y el resto del país.
+estamos trabajando para que el programa crezca y esté cada vez más cerca tuyo por eso, seguimos adhiriendo comercios en todo el país.
 
-Estamos rediseñando nuestro sitio web, en donde encontrarás toda la información relativa al programa: Beneficios, comercios adheridos, bases y condiciones. Además de las actividades sociales, institucionales, cursos, eventos, etc. y toda la información de interés Profesional.
+En nuestro sitio web encontrarás toda la información relativa al programa: Beneficios, comercios adheridos, bases y condiciones. Además de las actividades sociales, institucionales, cursos, eventos, etc. y toda la información de interés Profesional.
 
-Nuevamente te damos la bienvenida al PROGRAMA DE BENEFICIOS y las gracias por pertenecer a esta gran familia llamada ASOSUD.
+Nuevamente te damos la bienvenida al PROGRAMA DE BENEFICIOS y las gracias por pertenecer a esta gran familia .
 
         </p>
 
