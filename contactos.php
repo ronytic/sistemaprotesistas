@@ -1,6 +1,8 @@
 <?php
 $folder="";
-
+include_once("class/filial.php");
+$filial=new filial;
+$fil=$filial->mostrarTodoRegistro('',1,"nombre");
 ?>
 <?php include_once("cabecerahtml.php");?>
 <?php include_once("cabecera.php");?>
@@ -11,8 +13,22 @@ $folder="";
             	<h2 class="section-title centrar">Contactos</h2>
                 <div class="content-box box-default animated fadeInUp animation-delay-10">
                    <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3825.2973582328323!2d-68.12834618305348!3d-16.511078947344984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1524399622432" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+				   <h4 class="content-box-title text-left">Nuestras Filiales</h4>	
+						<?php
+						foreach($fil as $f){
+							?>
+							<div class="text-left">
+							<h5><?=$f['nombre'];?></h5>
+							<strong> Presidente: </strong><?=$f['presidente'];?><br>
+							<strong> Dirección: </strong><?=$f['direccion'];?><br>
+							<strong> Teléfono: </strong><?=$f['telefono'];?><br>
+							</div>
+							<?php
+						}
+						?>
+                    
+                    
+					</div>
                     <div class="col-md-6">
                     <h4 class="content-box-title">Datos de Contacto</h4>
                     
