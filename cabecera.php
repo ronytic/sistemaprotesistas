@@ -29,7 +29,7 @@
             <div class="dropdown animated fadeInDown animation-delay-11">
                <a href="" id="abrir" class="btn btn-primary" rel="cerrado"><i class="glyphicon glyphicon-list"></i></a>
                 <?php
-                if($_SESSION['LoginSistema']==""){
+                if(!isset($_SESSION['LoginSistema'])){
                 ?>
                 <!-- Inicio Login-->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Administración</a>
@@ -91,26 +91,28 @@
                 <li><a href="<?php echo $folder?>contactos.php">Contactos</a></li>
                 <li class="divider"></li>
                 <?php
-                if($_SESSION['LoginSistema']=="1"){
-                    include_once("class/menu.php");
-                    include_once("class/submenu.php");
-                    $menu=new menu;
-                    $submenu=new submenu;
+                if(isset($_SESSION['LoginSistema'])){
+                    if($_SESSION['LoginSistema']==1){
+                        include_once("class/menu.php");
+                        include_once("class/submenu.php");
+                        $menu=new menu;
+                        $submenu=new submenu;
 
-                    foreach($menu->mostrar($_SESSION['Nivel']) as $m){
-                    ?>
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><?php echo $m['nombre']?></a>
-                         <ul class="dropdown-menu dropdown-menu-left">
-                            <?php foreach($submenu->mostrar($_SESSION['Nivel'],$m['codmenu']) as $sm){?>
-                            <li><a href="<?php echo $folder;?><?php echo $m['url']?><?php echo $sm['url']?>"><?php echo $sm['nombre']?></a></li>
-                    
-                    <?php
-                    }?>        
-                            <!--<li class="divider"></li>-->
-                        </ul>
-                    </li>
-                    <?php
+                        foreach($menu->mostrar($_SESSION['Nivel']) as $m){
+                        ?>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><?php echo $m['nombre']?></a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <?php foreach($submenu->mostrar($_SESSION['Nivel'],$m['codmenu']) as $sm){?>
+                                <li><a href="<?php echo $folder;?><?php echo $m['url']?><?php echo $sm['url']?>"><?php echo $sm['nombre']?></a></li>
+                        
+                        <?php
+                        }?>        
+                                <!--<li class="divider"></li>-->
+                            </ul>
+                        </li>
+                        <?php
+                        }
                     }
                 }?>
              </ul>
