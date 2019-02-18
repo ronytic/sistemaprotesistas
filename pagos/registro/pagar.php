@@ -75,9 +75,9 @@ $(document).on("ready",function(){
                             </tr>
                             <tr>
                                 <td>Año<br><select name="anio" class="form-control">
-                                    <?php for($anio=2017;$anio<=date("Y");$anio++){
+                                    <?php for($anio=2018;$anio<=date("Y");$anio++){
                                         ?>
-                                        <option value="<?=$anio;?>"><?=$anio;?></option>
+                                        <option value="<?=$anio;?>" <?=$anio==date("Y")?'selected="selected"':'';?>><?=$anio;?></option>
                                         <?php
                                         }?>
                                 </select></td>
