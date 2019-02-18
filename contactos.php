@@ -19,9 +19,20 @@ $fil=$filial->mostrarTodoRegistro('',1,"nombre");
 							?>
 							<div class="text-left">
 							<h5><?=$f['nombre'];?></h5>
-							<strong> Presidente: </strong><?=$f['presidente'];?><br>
-							<strong> Dirección: </strong><?=$f['direccion'];?><br>
-							<strong> Teléfono: </strong><?=$f['telefono'];?><br>
+							<table class="table">
+								<tr>
+									<td><strong> Presidente: </strong></td>
+									<td> <?=$f['presidente'];?></td>
+								</tr>
+								<tr>
+									<td><strong> Dirección: </strong></td>
+									<td> <?=$f['direccion'];?></td>
+								</tr>
+								<tr>
+									<td><strong> Teléfono: </strong></td>
+									<td> <?=$f['telefono'];?></td>
+								</tr>
+							</table>
 							</div>
 							<?php
 						}
