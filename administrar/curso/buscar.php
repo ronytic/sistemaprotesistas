@@ -9,6 +9,7 @@ $cur=$cursos->mostrarTodoRegistro("nombre LIKE '$nombre%' and descripcion LIKE '
 <tr><th width="50">Nº</th><th>Nombre</th><th>Descripción</th><th>Fecha de Inicio</th><th>Imágen</th><th></th></tr>
 </thead>
 <?php
+$i=0;
 foreach($cur as $c){$i++;
 
 ?>
