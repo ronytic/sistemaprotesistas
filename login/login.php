@@ -1,6 +1,5 @@
 <?php
 session_start();
-@set_magic_quotes_runtime(0);
 //header("Content-Type: text/html;charset=utf-8");
 if(!empty($_POST)){
 	include_once("../configuracion.php");
@@ -33,7 +32,7 @@ if(!empty($_POST)){
 		$referencia= $_SERVER['HTTP_REFERER'];
 		$fecha=date("Y-m-d");
 		$hora=date("H:i:s");
-		if(ereg('^[a-z]*[a-z]$',$usuario)){
+		if(preg_match('/^[a-z]*[a-z]$/',$usuario)){
 			//Administrador 1 2 3 4
 			$reg=$usu->loginUsuarios($usuario,$pass);
 			$reg=array_shift($reg);
