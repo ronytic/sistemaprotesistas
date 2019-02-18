@@ -36,7 +36,6 @@ $cur=$cursos->mostrarTodoRegistro("",1,"fechainicio");
                 <?php
             }
             }?>
-
         </div>
     </div>
 </section>
