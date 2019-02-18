@@ -23,7 +23,7 @@ $even=$eventos->mostrarTodoRegistro("",1,"fechainicio");
                     </center>
                     <h4 class="content-box-title"><?=$e['nombre']?></h4>
                     <b>Fecha de Inicio:</b> <span class="badge badge-primary"><?=$e['fechainicio'];?></span>
-                    <p class="text-justify"><?=$e['descripcion']?></p>
+                    
                      <div class="alert alert-info"><b>Dirección:</b> <?=$e['direccion'];?></div>
                 </div>
             </div>
