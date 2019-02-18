@@ -65,7 +65,7 @@
                     $dus=$datosu->mostrarDatos($_SESSION['CodUsuarioLog']);
                     $dus=array_shift($dus);
                 ?>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $dus['nombre']?> <?php echo $dus['paterno']?> <?php echo $dus['materno']?></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $dus['cargo']?></a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated fadeInUp">
                 <a href="<?php echo $folder?>login/logout.php" class="btn btn-danger">Salir del Sistema</a>
                 </div>
