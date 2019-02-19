@@ -123,7 +123,7 @@ class bd{
 		else
 			$query ="INSERT INTO {$nombretabla} ($campos) VALUES ($datos)";
 
-		//echo $query."<br>";
+		echo $query."<br>";
 		//echo "NO ESTA HABILITADO EL REGISTRO";
 		return mysqli_query($this->l,$query);
 	}
@@ -210,16 +210,16 @@ class bd{
 			$Nivel=$_SESSION['Nivel'];
 
 			if(!isset($Values['Nivel'])&& empty($Values['Nivel'])){
-				$Values['Nivel']="$Nivel";
+				$Values['nivel']="$Nivel";
 			}
-			if(!isset($Values['FechaRegistro'])&& empty($Values['FechaRegistro'])){
-				$Values['FechaRegistro']="'$fecha'";
+			if(!isset($Values['fecha'])&& empty($Values['fecha'])){
+				$Values['fecha']="'$fecha'";
 			}
-			if(!isset($Values['HoraRegistro'])&& empty($Values['HoraRegistro'])){
-				$Values['HoraRegistro']="'$hora'";
+			if(!isset($Values['hora'])&& empty($Values['hora'])){
+				$Values['hora']="'$hora'";
 			}
-			if(!isset($Values['CodUsuario'])&& empty($Values['CodUsuario'])){
-				$Values['CodUsuario']="$CodUsuario";
+			if(!isset($Values['id'])&& empty($Values['id'])){
+				$Values['id']="$CodUsuario";
 			}
 			$Values['Activo']=1;
 		}else{//,array("Activo"=>1)
