@@ -4,9 +4,45 @@ include_once("../../class/cursos.php");
 $cursos=new cursos;
 $cur=$cursos->mostrarTodoRegistro(" codcursos='$codcursos'",1,"");
 $col=array_shift($cur);
+
+
+include_once("../../class/socio.php");
+$socio=new socio;
+$soc=$socio->mostrarTodoRegistro("",1,"paterno,materno,nombres");
+
+
 $folder="../../";
 include_once($folder."cabecerahtml.php");
 ?>
+<script type="text/javascript">
+$(document).ready(function(){
+    mostrarInscritos();
+    $("#formularioregistro").submit(function (e) {
+        e.preventDefault();
+
+        var codcursos=$("#codcursos").val();
+        var codsocio=$("#codsocio").val();
+        $.post("agregarinscrito.php",{"codcursos":codcursos,"codsocio":codsocio},function(){
+            mostrarInscritos();
+        });
+    });
+    $(document).on("click",".eliminar",function (e) {
+        e.preventDefault();
+        if(confirm("¿Deseas Eliminar este Socio?")){
+            var codcursosinscritos=$(this).attr("rel");
+            $.post("eliminarinscrito.php",{"codcursosinscritos":codcursosinscritos},function(data){
+                mostrarInscritos();
+            });  
+        }
+    });
+});
+function mostrarInscritos(){
+    var codcursos=$("#codcursos").val();
+    $.post("mostrarinscritos.php",{codcursos:codcursos},function(data){
+        $("#listadodeinscritos").html(data);
+    });
+}
+</script>
 <?php include_once($folder."cabecera.php");?>
 <section class="">
     <div class="container">
@@ -54,8 +90,47 @@ include_once($folder."cabecerahtml.php");
                     </form>
                 </fieldset>
             </div>
+            
         </div>
-        
+        <div class="row">
+            
+            <div class="col-sm-6">
+                <h2 class="section-title">Inscribir Socio</h2>
+                <fieldset>
+                   <form action="actualizar.php" method="post" id="formularioregistro" enctype="multipart/form-data">
+                    <input type="hidden" name="codcursos" value="<?php echo $codcursos?>" id="codcursos">
+                        <table class="table">
+                            <tr>
+                                <td>Socio <br>
+                                    <select name="codsocio" id="codsocio" class="form-control">
+                                    <?php
+                                    foreach ($soc as $s) {
+                                        ?>
+                                        <option value="<?=$s['codsocio'];?>"><?=$s['paterno'];?> <?=$s['materno'];?> <?=$s['nombres'];?></option>
+                                        <?php
+                                        
+                                    }
+                                    ?>
+                                    </select>
+                                    <br>
+                                    <input type="submit" value="Agregar" class="btn btn-primary">
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </div>
+            
+
+            <div class="col-sm-6">
+                <h2 class="section-title">Socios Inscritos</h2>
+                <fieldset id="listadodeinscritos">
+
+                </fieldset>
+            </div>
+        </div>
     </div>
 </section>
 <?php include_once($folder."pie.php");?>
