@@ -3,9 +3,10 @@ include_once("fpdf_protection.php");
 
 	class PPDF extends FPDF_Protection{
 		var $ancho=176;
+		var $orientation="P";
 		function Header(){
 			global $idioma;
-			$this->SetTitle(utf8_decode("Sistema de Administración"),true);
+			$this->SetTitle(utf8_decode("Reporte"),true);
 			$this->SetAuthor(utf8_decode("Sistema de Administración  Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
 			$this->SetSubject(utf8_decode("Sistema de Administración  Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
 			$this->SetCreator(utf8_decode("Sistema de Administración  Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
@@ -33,7 +34,7 @@ include_once("fpdf_protection.php");
 			$this->Cell(70,4,utf8_decode($gestion),0,0,"L");
 			$this->ln(10);	
 			$this->Fuente("B",18);
-			$this->Cell($this->ancho,4,utf8_decode($titulo.$this->orientation),0,5,"C");
+			$this->Cell($this->ancho,4,utf8_decode($titulo),0,5,"C");
 			$this->ln(5);
 			$this->CuadroCabecera(40,"Fecha del Reporte:",20,utf8_encode($fecha));
 			$this->ln(5);
