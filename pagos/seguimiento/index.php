@@ -1,8 +1,12 @@
 <?php
+include_once("../../login/check.php");
 $folder="../../";
+
 include_once("../../class/filial.php");
 $filial=new filial;
 $fil=$filial->mostrarTodoRegistro("",1,"nombre");
+
+
 include_once($folder."cabecerahtml.php");
 ?>
 <script language="javascript" type="text/javascript" src="../../js/jquery.form.js"></script>
@@ -38,6 +42,19 @@ $(document).on("ready",function(){
                                         <?php
                                         }?>
                                 </select></td>
+                                <td>
+                                        Filial<br>
+                                        <select name="codfilial" id="codfilial" class="form-control">
+                                            <option value="%">Todos</option>
+                                            <?php
+                                                foreach($fil as $f){
+                                            ?>
+                                                <option value="<?=$f['codfilial'];?>"><?=$f['nombre'];?></option>
+                                            <?php
+                                                }
+                                            ?>
+                                        </select>
+                                </td>
                                 <td><br><input type="submit" value="Buscar" class="btn btn-primary"></td>
                             </tr>
                             

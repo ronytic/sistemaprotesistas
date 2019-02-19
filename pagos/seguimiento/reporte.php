@@ -2,18 +2,23 @@
 include_once("../../login/check.php");
 
 $anio=$_GET['anio'];
+$codfilial=$_GET['codfilial'];
+
 include_once("../../class/socio.php");
 $socio=new socio();
-$soc=$socio->mostrarTodoRegistro("",1,"paterno,materno,nombres");
+$soc=$socio->mostrarTodoRegistro("codfilial LIKE '$codfilial'",1,"paterno,materno,nombres");
 
 include_once("../../class/pago.php");
 $pago=new pago();
+
+
 
 include_once("../../impresion/pdf.php");
 class PDF extends PPDF{
     function Cabecera(){
         $this->TituloCabecera(10,"N");
         $this->TituloCabecera(60,"Socio");
+
         for($i=1;$i<=12;$i++){
             //$this->TituloCabecera(14,str_pad($i,2,"0",STR_PAD_LEFT));
             $this->TituloCabecera(14,capitalizar(strftime(" %b ",strtotime("2018-$i-01"))));
@@ -21,9 +26,12 @@ class PDF extends PPDF{
         }
     }
 }
+
 $titulo="Seguimiento de Pagos";
 $pdf=new PDF("L","mm","letter");
 $pdf->AddPage();
+
+
 $j=0;
 foreach($soc as $s){$j++;
     
