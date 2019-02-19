@@ -12,6 +12,13 @@ for($mes=1;$mes<=12;$mes++){
         $p=array_shift($p);
     }else{
         $estadofila="n";
+        $p=array("estado"=>"",
+            "monto"=>"",
+            "fechapago"=>"",
+            "observacion"=>"",
+            "estadofila"=>"",
+            "codpago"=>""
+                );
     }
 ?>
 <tr>

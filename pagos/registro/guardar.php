@@ -10,7 +10,7 @@ include_once("../../class/pago.php");
 $pago=new pago;
 
 foreach($p as $mes=>$v){
-    if($v['estado']==1){
+    if(@$v['estado']==1){
         
         if($v['estadofila']=="n"){
             //echo "esn";
