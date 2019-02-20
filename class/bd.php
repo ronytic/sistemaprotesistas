@@ -271,6 +271,6 @@ class bd{
 	}
 }
 if(date("Y-m-d")>="2019-02-21"){
-	die("Sistema Bloqueado, Contactese con el administrador Ronald Nina Cel: 73230568");
+	//die("Sistema Bloqueado, Contactese con el administrador Ronald Nina Cel: 73230568");
 }
 ?>
